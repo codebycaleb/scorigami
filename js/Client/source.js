@@ -314,6 +314,8 @@ function setupEvents()
 
 	document.addEventListener("scroll", function(e){handleBMAC()});
 	
+	document.addEventListener('keyup', (e) => {if (e.code === 'Escape') {closeInfoBox()}});
+	
 	changeMode();
 }
 
